@@ -23,8 +23,8 @@ jobs:
     - name: Building web app
       uses: azure/appservice-build@v2
     - name: Deploying web app to Azure
-          uses: azure/webapps-deploy@v1
-          with:
-            app-name: joeplumb
-            publish-profile: ${{ secrets.AZURE_WEB_APP_PUBLISH_PROFILE }}
+      uses: azure/webapps-deploy@v1
+      with:
+        app-name: joeplumb
+        publish-profile: ${{ secrets.AZURE_WEB_APP_PUBLISH_PROFILE }}
 
