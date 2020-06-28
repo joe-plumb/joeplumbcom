@@ -7,8 +7,6 @@ on:
   push:
     branches: 
     - main
-    paths:
-    - 'src/**'
 
 jobs:
   build-and-deploy:
@@ -19,6 +17,8 @@ jobs:
 
       - name: Building web app
         uses: azure/appservice-build@v2
+        with:
+          source-directory: '/'
 
       - name: Deploying web app to Azure
         uses: azure/webapps-deploy@v1
