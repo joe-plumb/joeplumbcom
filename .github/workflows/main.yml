@@ -1,0 +1,33 @@
+# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: Build and Deploy web app
+
+on:
+  push:
+    branches: 
+    - main
+    paths:
+    - 'src/**'
+
+jobs:
+  build-and-deploy:
+  runs-on: ubuntu-latest
+  steps:
+    - name: Cloning repository
+      uses: actions/checkout@v1
+
+    - name: Use Node.js
+    uses: actions/setup-node@v1
+    with:
+      node-version: '12.x'  
+
+    - name: Building web app
+      uses: azure/appservice-build@v2
+
+    - name: Deploying web app to Azure
+          uses: azure/webapps-deploy@v1
+          with:
+            app-name: joeplumb
+            publish-profile: ${{ secrets.AZURE_WEB_APP_PUBLISH_PROFILE }}
+
