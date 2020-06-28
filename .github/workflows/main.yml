@@ -15,10 +15,17 @@ jobs:
       - name: Cloning repository
         uses: actions/checkout@v1
 
-      - name: Building web app
-        uses: azure/appservice-build@v2
+      - name: Set Node.js version
+        uses: actions/setup-node@v1
         with:
-          source-directory: '/'
+          node-version: '14.x'
+
+      # install dependencies, build, and test
+      - name: npm install, build, and test
+        run: |
+          npm install
+          npm run build --if-present
+          npm run test --if-present
 
       - name: Deploying web app to Azure
         uses: azure/webapps-deploy@v1
