@@ -16,15 +16,12 @@ jobs:
   steps:
     - name: Cloning repository
       uses: actions/checkout@v1
-
     - name: Use Node.js
-    uses: actions/setup-node@v1
-    with:
-      node-version: '12.x'  
-
+      uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'  
     - name: Building web app
       uses: azure/appservice-build@v2
-
     - name: Deploying web app to Azure
           uses: azure/webapps-deploy@v1
           with:
