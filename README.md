@@ -1,6 +1,6 @@
-# Joeplumbcom
+# joeplumb.com
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.0.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.0, and then I imported my bootstrap website into this Angular app. Nice!
 
 ## Development server
 
