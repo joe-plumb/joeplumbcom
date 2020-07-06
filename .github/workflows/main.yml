@@ -18,7 +18,7 @@ jobs:
       - name: Set Node.js version
         uses: actions/setup-node@v1
         with:
-          node-version: '14.x'
+          node-version: '12.x'
 
       # install dependencies, build, and test
       - name: npm install, build, and test
