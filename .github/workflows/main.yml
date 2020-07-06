@@ -30,7 +30,7 @@ jobs:
         run: |
           npm install -g @angular/cli
           npm install
-          npm run build --if-present
+          ng build --prod
 
       - name: Deploying web app to Azure
         uses: azure/webapps-deploy@v2
