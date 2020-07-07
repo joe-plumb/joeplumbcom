@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Cloning repository
-        uses: actions/checkout@main
+        uses: actions/checkout@v1
       - name: Set Node.js version
         uses: actions/setup-node@v1
         with:
