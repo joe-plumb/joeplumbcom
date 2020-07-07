@@ -24,7 +24,7 @@ var options = {
 // });
 
 // This needs to be after middleware configured for middleware to be applied
-server.use('/', express.static('/home/site/wwwroot', options));
+server.use('/', express.static('/home/site/wwwroot/dist/joeplumbcom/', options));
 
 // Angular routing does not work in Azure by default
 // https://stackoverflow.com/questions/57257403/how-to-host-an-angular-on-azure-linux-web-app
