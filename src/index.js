@@ -12,16 +12,6 @@ var options = {
     index: 'index.html'
 };
 
-// Middleware to redirect to www
-// server.all("*", (request, response, next) => {
-//     let host = request.headers.host;
-
-//     if (host.match(/^www\..*/i)) {
-//         next();
-//     } else {
-//         response.redirect(301, "https://www." + host + request.url);
-//     }
-// });
 
 // This needs to be after middleware configured for middleware to be applied
 server.use('/', express.static('/home/site/wwwroot/dist/joeplumbcom/', options));

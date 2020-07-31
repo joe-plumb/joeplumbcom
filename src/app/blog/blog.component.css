@@ -1,0 +1,32 @@
+/* https://mdbootstrap.com/snippets/jquery/bartek-malanowski/1071799#html-tab-view */
+
+.rainbow-card:before {
+    height: 4px;
+    width: 100%;
+    content: "";
+    background: linear-gradient(270deg,#6f42c1 7.1%,#0366d6 28.4%,#28a745 42.6%,#ffd33d 56.8%,#f66a0a 71%,#d73a49 92.9%,#6f42c1);
+    background-size: 200% 100%;
+    animation: rainbow 4s linear infinite;
+    border-radius: .25rem .25em 0 0;
+  }
+  
+.card-menu {
+    justify-content: flex-end;
+  }
+  
+@keyframes rainbow {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+        background-position: -100% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+  }
+
+.Posts {
+    list-style: none  
+}
+

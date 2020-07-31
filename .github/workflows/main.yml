@@ -27,7 +27,7 @@ jobs:
       - name: npm install and build
         run: |
           npm install
-          npm run build --prod
+          npm run build:ssr
 
       - name: Deploying web app to Azure
         uses: azure/webapps-deploy@v2
