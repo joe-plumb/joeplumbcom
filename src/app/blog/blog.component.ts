@@ -11,7 +11,8 @@ import { POSTS } from './blog-summary';
 export class BlogComponent implements OnInit {
 
   Posts = POSTS;
-
+  
+/* Probably can delet this */
   selectedPost: Posts;
   onSelect(post: Posts): void {
     this.selectedPost = post;
