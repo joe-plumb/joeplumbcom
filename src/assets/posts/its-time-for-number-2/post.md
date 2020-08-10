@@ -26,3 +26,14 @@ Donec tellus eros, blandit vitae odio sit amet, sollicitudin viverra nisi. Duis 
 
 
 Sed non interdum velit, sit amet imperdiet enim. Donec nec lectus sit amet mauris cursus viverra. Donec ac metus at libero faucibus tempus. Nunc accumsan, neque et feugiat ornare, neque lacus rutrum ante, in feugiat odio dui in nisl. Donec at varius quam. Vivamus metus lorem, aliquam sollicitudin ipsum et, varius mattis sapien. Nullam mattis commodo risus, eget venenatis mauris euismod ac. Phasellus dapibus risus eu metus laoreet, in pharetra urna aliquam. Ut tristique arcu ac arcu mattis, volutpat pretium sem venenatis. Vivamus risus eros, dapibus faucibus lacus quis, consectetur sagittis nisi. Donec quis ex vehicula, consequat eros bibendum, ultrices nisl. Suspendisse potenti. Phasellus sit amet libero quam.
+
+
+This is what an image looks like:
+
+<img class="img-fluid" src="assets/posts/hello-world/img/dog.jpg" alt="a lovely smiling dog on a boat">
+
+
+This is what a gif looks like:
+
+<img class="img-fluid" src="assets/posts/hello-world/img/leaves.gif" alt="a gif of some leaves">
+
