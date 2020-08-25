@@ -48,7 +48,7 @@ If you've got this far, you should be good to go! I've included some links and a
 
 - *Creating Serverless APIs to share data from Azure Blob* - After sharing this getting started content with my team, a colleague of mine asked whether Azure Functions would be a good fit to build a REST API for data sharing. Using a HTTP trigger and Azure Blob storage input binding, I was able to knock together [this example](https://github.com/joe-plumb/serverless-data-api). 
 
--  *End to end tutorial* - This post covers the basics should cover all you need to know to get started. If you want to go into more detail, there is a brilliant end to end [getting started tutorial in the documentation](https://docs.microsoft.com/en-us/azure/developer/python/tutorial-vs-code-serverless-python-01). 
+-  *End to end tutorial* - This post covers the basics, and should cover all you need to know to get started. If you want to go into more detail, there is a brilliant end to end [getting started tutorial in the documentation](https://docs.microsoft.com/en-us/azure/developer/python/tutorial-vs-code-serverless-python-01).
 
 ### On my to do list
 One pattern I haven't yet had the opportunity to road test is the integration between [Azure Machine Learning and Azure Functions](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-deploy-functions). I can see this being a really powerful pattern for peaky, unpredictable workloads, or for any applications where deploying to Kubernetes would add unnecessary complexity.
