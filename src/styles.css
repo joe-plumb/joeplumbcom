@@ -30,6 +30,14 @@
 	margin: 0 auto;
 }
 
+.img-fluid-blog {
+    display: block;
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 section {
     padding: 10px 0;
 }
