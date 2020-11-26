@@ -40,5 +40,5 @@ server.get('*', (request, response) => {
         response.sendFile(path.resolve('index.html'));
     }
 });
-
+server.set('port', process.env.PORT || 4200);
 server.listen(process.env.PORT);
