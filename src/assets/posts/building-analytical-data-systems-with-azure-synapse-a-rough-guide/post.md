@@ -26,7 +26,7 @@ One of the key things to remember with any technical project is to _plan ahead, 
 ## Technical
 The [flow of data](https://docs.microsoft.com/en-us/azure/architecture/solution-ideas/articles/modern-data-warehouse#data-flow) through your MVP is likely to follow this common pattern. The focus of this post is on how to move through steps 1 to 3.
 
-<img class="img-fluid-blog" src="assets/posts/azure-synapse-my-learnings-from-three-weeks-of-hands-on/img/1.png" alt="TODO">
+<img class="img-fluid-blog" src="assets/posts/building-analytical-data-systems-with-azure-synapse-a-rough-guide/img/1.png" alt="Architecture diagram of a modern data warehouse">
 
 _Architecture overview of data flow for Modern Data Warehouse pattern in Azure_
 
