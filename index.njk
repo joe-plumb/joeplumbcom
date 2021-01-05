@@ -4,12 +4,27 @@ eleventyNavigation:
   key: Home
   order: 1
 ---
+<div class="container">
+<div class="row">
+<div class="col-lg-12">
+    <h1 class="section-heading">Joe Plumb</h1>
+    <p class="lead section-lead">Hello! You've found me.</p>
+    <p class="section-paragraph">I'm Joe. I am a creative and driven individual with a passion for understanding how things work, and how I can use technology to help make people's day to day lives easier.</p>
+    <p class="section-paragraph">I am currently based in central <em>London</em>, working for Microsoft as a Data Solution Architect. You can read more about how I got there, my skills and past experience on <a href="https://www.linkedin.com/in/josephplumb" alt="Link to Joe Plumb on LinkedIn">LinkedIn</a>. To get in touch, you can find me on <a href="https://twitter.com/joe_plumb" alt="Link to Joe Plumb on Twitter">Twitter</a>, or drop me an e-mail at <a href="mailto: contact@joeplumb.com?Subject=Hey%20Joe!" target="_top" alt="Send Joe an e-mail">contact@joeplumb.com</a></p>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="col-lg-12">
+    {% set maxPosts = collections.posts.length | min(1) %}
+    <h4>Latest Blog {% if maxPosts == 1 %}Post{% else %}{{ maxPosts }} Posts{% endif %}</h4>
 
-{% set maxPosts = collections.posts.length | min(3) %}
-<h1>Latest {% if maxPosts == 1 %}Post{% else %}{{ maxPosts }} Posts{% endif %}</h1>
+    {% set postslist = collections.posts | head(-1) %}
+    {% set postslistCounter = collections.posts | length %}
+    {% include "postslist.njk" %}
 
-{% set postslist = collections.posts | head(-3) %}
-{% set postslistCounter = collections.posts | length %}
-{% include "postslist.njk" %}
-
-<p>More posts can be found in <a href="{{ '/posts/' | url }}">the archive</a>.</p>
+    
+</div>
+</div>
+</div>
