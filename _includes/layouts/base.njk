@@ -24,6 +24,7 @@
         /* ...Other Configuration Options... */
     }});
     </script>
+    <script src="https://kit.fontawesome.com/2986efe4f6.js" crossorigin="anonymous"></script>
   </head>
   <header class="image-bg-fluid-height">
     <a href="{{ '/' | url }}"><img class="img-responsive img-center img-rounded" src="/img/profile.jpg" style="width:200px;height:200px" alt="Profile image of Joe Plumb"></a>
@@ -49,21 +50,29 @@
     <!-- Current page: {{ page.url | url }} -->
   </body>
 
-<!-- Image backgrounds are set within the full-width-pics section of the index.css file. -->
-<aside class="image-bg-fixed-height"></aside>
+
 
 <!-- Footer -->
-<footer>
+<footer class="site-footer image-bg-fixed-height">
     <div class="container">
         <div class="row">
-            <div ng-app ng-controller="YearController" class="col-lg-12">
-                <p>Copyright &copy; Joe Plumb 2021</p>
-            <p>Created using 11ty and Bootstrap</p>
-            </div>
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <ul class="footer-text">
+              <li>Copyright &copy; Joe Plumb 2021</li>
+              <li>Created using 11ty and Bootstrap</li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="rss" href="https://joeplumb.com/feed/feed.xml"><i class="fa fa-rss"></i></a></li>
+              <li><a class="twitter" href="https://twitter.com/joe_plumb"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="github" href="https://github.com/joe-plumb"><i class="fa fa-github"></i></a></li>
+              <li><a class="linkedin" href="https://www.linkedin.com/in/josephplumb/"><i class="fa fa-linkedin"></i></a></li>   
+            </ul>
+          </div>
         </div>
-        <!-- /.row -->
-    </div>
-    <!-- /.container -->
-
+</div>
 </footer>
+<!-- Image backgrounds are set within the full-width-pics section of the index.css file. 
+<aside class="image-bg-fixed-height"></aside>-->
 </html>
