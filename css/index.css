@@ -287,7 +287,8 @@ footer {
 }
 
 .footer-text {
-  list-style:none
+  list-style:none;
+  padding-inline-start:0px;  
 }
 
 @media(max-width:768px) {
